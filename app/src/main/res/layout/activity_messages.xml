@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.user.usmandroidapp.MainActivity"
+              android:orientation="vertical"
+              android:background="@drawable/images"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:gravity="right">
+
+        <Button
+                android:text="Refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_weight="1"
+                android:onClick="findMessages"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/messages"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

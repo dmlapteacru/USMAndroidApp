@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.usmandroidapp.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="horizontal"
+    android:gravity="right">
+
+    <!--<Button
+        android:id="@+id/exitbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textColor="@android:color/white"
+        android:onClick="logout"/>-->
+    <TextView
+            android:id="@+id/welcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your text will be here"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+            android:id="@+id/btnShowMess"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="MyMessages"
+            android:onClick="showMessages"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <EditText
+            android:id="@+id/textEnc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your text here.."
+            android:inputType="text"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Key"
+            android:inputType="text"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+        <EditText
+                android:id="@+id/textToUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type username send to.."
+                android:inputType="text"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your text will be here"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="324dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+            <Button
+                android:id="@+id/btnEnc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="Encrypt"
+                android:onClick="btnEncr"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            <Button
+                android:id="@+id/btnDec"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:text="Decrypt"
+                android:onClick="btnDecr"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            <Button
+                    android:id="@+id/sendMess"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:text="Send"
+                    android:onClick="sendMessage"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
